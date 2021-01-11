@@ -1,0 +1,25 @@
+{
+  "name": "zensolutions",
+  "version": "1.0.0",
+  "description": "Site institucional",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atiladelcanton/zensolutions.git"
+  },
+  "author": "ZenSolutions",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atiladelcanton/zensolutions/issues"
+  },
+  "homepage": "https://github.com/atiladelcanton/zensolutions#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
