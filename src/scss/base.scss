@@ -1,8 +1,85 @@
-body, h1, h2, h3, p, ul {
-	padding: 0px;
-	margin: 0px;
-}
+@import '_reset';
 
 * {
 	box-sizing: border-box;
+}
+@import '_colors';
+@import '_fonts';
+@import '_components';
+
+body{
+	overflow: hidden;
+}
+.container{
+	max-width: 960px;
+	display: flex;
+	margin: 0 auto;
+}
+body{
+	background: url('../img/bg.svg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.header{
+	padding: 48px 0;
+	align-items: center;
+
+	.header-logo{
+		flex:1;
+	}
+	.menu-header{
+			li{
+				display: inline-block;
+				font-family: 'Montserrat Bold';
+				font-size: em(16);
+				flex: 1;
+				margin-right: 14px;
+				&:nth-last-child(1){
+					margin-right: 0;
+				}
+				a{
+					text-decoration: none;
+					color: $dark-gray;
+					padding: 10px;
+					border: 2px solid rgba(255,255,255,0);
+					transition: all .8s;
+					&:hover{
+						
+						border: 2px solid rgba(88,87,87,1);
+						
+					}
+				}
+			}
+	}
+}
+.intro{
+	display: flex;
+	.intro-chamada {
+		max-width: 684px;
+    	display: flex;
+		flex-direction: column;
+		h1{
+			line-height: 1.3em;
+			color: $dark-blue;
+		}
+		p{
+			max-width: 413px;
+			margin-top: 10px;
+			line-height: em(30);
+
+		}
+		a{
+			margin-top: 46px;
+		}
+	}
+	.intro-personagem{
+		position: relative;
+		left: 10px;
+		top: 40px;
+		
+		img{
+			display: block;
+			width: 340px;
+		}
+	}
 }
