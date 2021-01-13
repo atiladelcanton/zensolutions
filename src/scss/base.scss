@@ -7,11 +7,8 @@
 @import '_fonts';
 @import '_components';
 
-body{
-	overflow: hidden;
-}
 .container{
-	max-width: 960px;
+	max-width: 1200px;
 	display: flex;
 	margin: 0 auto;
 }
@@ -21,19 +18,19 @@ body{
 	height: 100vh;
 }
 .header{
-	padding: 48px 0;
+	padding: 36px 0 0 73px;
 	align-items: center;
-
+	justify-content: center;
 	.header-logo{
 		flex:1;
 	}
 	.menu-header{
 			li{
 				display: inline-block;
-				font-family: 'Montserrat Bold';
+				font-family: 'Montserrat Medium';
 				font-size: em(16);
 				flex: 1;
-				margin-right: 14px;
+				margin-right: 46px;
 				&:nth-last-child(1){
 					margin-right: 0;
 				}
@@ -52,12 +49,15 @@ body{
 			}
 	}
 }
+
 .intro{
 	display: flex;
 	.intro-chamada {
-		max-width: 684px;
+		max-width: 685px;
     	display: flex;
 		flex-direction: column;
+		padding-left: 76px;
+		padding-top: 79px;
 		h1{
 			line-height: 1.3em;
 			color: $dark-blue;
@@ -69,17 +69,84 @@ body{
 
 		}
 		a{
-			margin-top: 46px;
+			margin-top: 19px;
 		}
 	}
 	.intro-personagem{
 		position: relative;
-		left: 10px;
-		top: 40px;
-		
+		left: 50px;
+		top: 90px;
+		z-index: -1;
 		img{
 			display: block;
 			width: 340px;
 		}
+	}
+}
+
+.nossas-solucoes{
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 160px;
+	h2{
+		color: $ligth-gray;
+	}
+	h3{
+		color:$dark-blue;
+		margin-bottom: 20px;
+	}
+	p{
+		line-height: em(30);
+		color:$gray;
+		
+	}
+	.solucoes{
+		margin-top: 54px;
+		margin-bottom: 54px;
+		ul {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			li{
+				margin-right: 30px;
+				height: 358px;
+				width: 308px;
+				background: url('../img/poligono_bg_solucoes.svg') no-repeat;
+				background-size:contain;
+				background-position:  center center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				&:nth-last-child(1){
+					margin-right: 0;
+				}
+				&:first-child{
+					h4{
+						margin: 48px 0 15px 0;
+					}
+				}
+				h4{
+					font-family: 'Montserrat ExtraBold';
+					font-size: em(18);
+					color: $dark-blue;
+					max-width: 214px;
+					margin: 34px 0 15px 0;
+
+					
+				}
+				p{
+					font-family: 'Montserrat Medium';
+					font-size: em(12);
+					max-width: 204px;
+				}
+			}
+		}
+	}
+	.estrofe-nossas-solucoes{
+		font-family: 'Montserrat Medium';
+		font-size: em(14);
 	}
 }
