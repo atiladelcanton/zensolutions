@@ -73,10 +73,7 @@ body{
 		}
 	}
 	.intro-personagem{
-		position: relative;
-		left: 50px;
-		top: 90px;
-		z-index: -1;
+		padding: 79px 0 143px 46px;
 		img{
 			display: block;
 			width: 340px;
@@ -89,7 +86,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-top: 160px;
 	h2{
 		color: $ligth-gray;
 	}
@@ -120,12 +116,13 @@ body{
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+
 				&:nth-last-child(1){
 					margin-right: 0;
 				}
 				&:first-child{
 					h4{
-						margin: 48px 0 15px 0;
+						margin: 29px 0 15px 0;
 					}
 				}
 				h4{
@@ -141,6 +138,9 @@ body{
 					font-family: 'Montserrat Medium';
 					font-size: em(12);
 					max-width: 204px;
+				}
+				img{
+					width:70px;
 				}
 			}
 		}
