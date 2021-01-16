@@ -1,0 +1,25 @@
+.intro{
+	display: flex;
+	.intro-chamada {
+		max-width: 685px;
+    	display: flex;
+		flex-direction: column;
+		padding-left: 76px;
+		padding-top: 89px;
+		h1{
+			font-size: 3.4em;
+			line-height: 1.3em;
+			color: $dark-blue;
+		}
+		p{
+			max-width: 413px;
+			margin-top: 10px;
+			line-height: em(30);
+
+		}
+		a{
+			margin-top: 19px;
+		}
+	}
+	
+}
