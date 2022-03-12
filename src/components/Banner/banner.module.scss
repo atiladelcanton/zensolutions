@@ -1,0 +1,39 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.banner {
+  margin-top: toRem(55);
+  width: 100%;
+  height: toRem(310);
+  padding: 0 toRem(48);
+  background: url("../../../public/img/background-banner.svg") no-repeat center
+    center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .banner__title {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: black;
+    font-size: 50px;
+    color: #52ebda;
+    margin-bottom: toRem(41);
+  }
+  .banner__text {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: regular;
+    font-size: 20px;
+    color: #3f3d56;
+    line-height: toRem(40);
+    span {
+      background: #3ed5e3;
+      font-weight: 800;
+      padding: 2px 4px;
+      color: #fff;
+    }
+  }
+  .banner__side__left {
+    @include tablet() {
+      width: toRem(834);
+    }
+  }
+}

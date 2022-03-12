@@ -1,0 +1,48 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.nav {
+  .nav__container {
+    @include tablet() {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+    }
+    .nav__item {
+      @include tablet() {
+        width: toRem(160);
+        height: toRem(47);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav__item__link {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: regular;
+        transition: all 0.2s linear;
+        color: #585757;
+        @include tablet() {
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: toRem(160);
+          border: 2px solid white;
+          border-radius: toRem(10);
+        }
+        &:hover {
+          color: #2f2e41;
+          border-image: linear-gradient(
+              90deg,
+              #83f1c5 0%,
+              #3ed5e3 50.52%,
+              #83f1f1 100%
+            )
+            1;
+        }
+      }
+    }
+  }
+}

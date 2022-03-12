@@ -1,0 +1,9 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: toRem(43);
+}
